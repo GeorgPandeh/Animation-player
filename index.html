@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Animation-player</title>
+    <link rel="stylesheet" href="./src/css/styles.css" type="text/css" />
+  </head>
+  <body>
+    <h1>Animation-player</h1>
+    <div id="frame-rate">fps: 1</div>
+    <input id="fps" type="range" min="1" max="24" step="1" value="1">
+    <div>
+      <button id="draw">start-animation</button>
+      <button id="stop">stop-animation</button>
+      <button id="new-frame">new-frame</button>
+      <button id="full-screen">full-screen</button>
+      <div class="frame-container"></div> 
+      <hr/>
+      <canvas id="canvas" width="150" height="150"></canvas>
+    </div>
+    <script  src="./dist/bundle.js"></script>
+  </body>
+</html>
